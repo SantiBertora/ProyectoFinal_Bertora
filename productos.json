@@ -2,96 +2,115 @@
     {
         "nombre": "Bombay",
         "bebida": "Gin",
-        "precio": 900
+        "precio": 900,
+        "img": ""
     },
     {
         "nombre": "Tanqueray",
         "bebida": "Gin",
-        "precio": 850
+        "precio": 850,
+        "img": ""
     },
     {
         "nombre": "Hendrick's",
         "bebida": "Gin",
-        "precio": 2000
+        "precio": 2000,
+        "img": ""
     },
     {
         "nombre": "Smirnoff",
         "bebida": "Vodka",
-        "precio": 500
+        "precio": 500,
+        "img": ""
     },
     {
         "nombre": "Grey Goose",
         "bebida": "vodka",
-        "precio": 1800
+        "precio": 1800,
+        "img": ""
     },
     {
         "nombre": "Absolut",
         "bebida": "Vodka",
-        "precio": 900
+        "precio": 900,
+        "img": ""
     },
     {
         "nombre": "Havana Club 7 Años",
         "bebida": "Ron",
-        "precio": 1400
+        "precio": 1400,
+        "img": ""
     },
     {
         "nombre": "Bacardi Blanco",
         "bebida": "Ron",
-        "precio": 600
+        "precio": 600,
+        "img": ""
     },
     {
         "nombre": "Barceló Dorado",
         "bebida": "Ron",
-        "precio": 600
+        "precio": 600,
+        "img": ""
     },
     {
         "nombre": "Velho Barreiro",
         "bebida": "Cachaca",
-        "precio": 300
+        "precio": 300,
+        "img": ""
     },
     {
         "nombre": "Santo Grau",
         "bebida": "Cachaca",
-        "precio": 900
+        "precio": 900,
+        "img": ""
     },
     {
         "nombre": "José Cuervo Plata",
         "bebida": "Tequila",
-        "precio": 950
+        "precio": 950,
+        "img": ""
     },
     {
         "nombre": "1800 Añejo",
         "bebida": "Tequila",
-        "precio": 2200
+        "precio": 2200,
+        "img": ""
     },
     {
         "nombre": "Jhonnie Walker Black Label",
         "bebida": "Whisky",
-        "precio": 2200
+        "precio": 2200,
+        "img": ""
     },
     {
         "nombre": "Royal Salute",
         "bebida": "Whisky",
-        "precio": 10000
+        "precio": 10000,
+        "img": ""
     },
     {
         "nombre": "Chivas Regal 18 Años",
         "bebida": "Whisky",
-        "precio": 5000
+        "precio": 5000,
+        "img": ""
     },
     {
         "nombre": "Hipnotiq",
         "bebida": "Licor",
-        "precio": 2000
+        "precio": 2000,
+        "img": ""
     },
     {
         "nombre": "Frangelico",
         "bebida": "Licor",
-        "precio": 1600
+        "precio": 1600,
+        "img": ""
     },
     {
         "nombre": "Cointreau",
         "bebida": "Licor",
-        "precio": 1800
+        "precio": 1800,
+        "img": ""
     }
 ]
