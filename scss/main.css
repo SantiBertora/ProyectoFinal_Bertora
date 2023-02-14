@@ -1,17 +1,60 @@
 li {
   list-style-type: none;
 }
+li .precio {
+  color: green;
+  font-weight: bold;
+  font-size: x-large;
+}
+li .precioSinIVA {
+  color: green;
+  font-weight: bold;
+  font-size: medium;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #efb810;
+}
 
 .producto {
   border: 1px solid rgba(0, 0, 0, 0.205);
   border-radius: 1rem;
   margin: 1rem;
   padding: 1rem;
-  min-width: 20%;
+  width: 20%;
 }
 
 #listadoProductos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+main #filrado {
+  width: 80%;
+}
+main #catalogo {
+  width: 80%;
+}
+
+#carrito {
+  width: 20%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+}
+.productoEnCarrito {
+  border-bottom: 1px solid black;
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=main.css.map */

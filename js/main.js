@@ -49,7 +49,7 @@ function renderizarProductos(productos) {
 
         const pPrecio = document.createElement("p");
         pPrecio.className = "precio"
-        pPrecio.innerHTML = `$${producto.precio * 1.22}`;
+        pPrecio.innerHTML = `$${ Math.round(producto.precio * 1.22)}`;
 
         const pSinIva = document.createElement("p");
         pSinIva.className = "precioSinIVA";
@@ -108,7 +108,4 @@ function agregarAlCarrito(producto, cantidad) {
 
         carrito[productoExiste].cantidad += cantidad;
     }
-
-    console.log(carrito);
-
 }
