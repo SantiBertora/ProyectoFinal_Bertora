@@ -1,10 +1,13 @@
 //VARIABLES
 
 const carrito = [];
+let totalAPagar = 0;
 
 //DOM
 
 const listadoProductos = document.getElementById("listadoProductos");
+const listadoCarrito = document.getElementById("listadoCarrito");
+const precioFinal = document.getElementById("precioFinal");
 
 //OBTENEMOS LOS PRODUCTOS JSON
 
@@ -87,6 +90,66 @@ function renderizarProductos(productos) {
     }
 }
 
+//FUNCION RENDERIZAR CARRITO
+
+/* <li class="productoEnCarrito">
+    <img class="imgCarrito" src="/img/productos-png/gin_bombay.png" alt="Imagen Producto en Carrito">
+    <h6>Gin Bombay</h6>
+    <p class="precio">854</p>
+    <p class="precioSinIVA">700</p>
+    <p class="cantidad">5</p>
+    <p class="total">4270</p>
+</li> */
+
+function renderizarCarrito(productos) {
+
+    //limpiarcarrito
+
+    listadoCarrito.innerHTML = "";
+
+    for(const producto of productos) {
+
+        const li = document.createElement("li");
+        li.className = "productoEnCarrito";
+
+        const img = document.createElement("img");
+        img.className = "imgCarrito";
+        img.src = `${producto.img}`;
+        img.alt = "Imagen Producto en Carrito";
+
+        const h6 = document.createElement("h6");
+        h6.innerHTML = `${producto.nombre}`;
+
+        const pPrecio = document.createElement("p");
+        pPrecio.className = "precio"
+        pPrecio.innerHTML = `$${producto.precioMasIVA}`;
+
+        const pSinIva = document.createElement("p");
+        pSinIva.className = "precioSinIVA";
+        pSinIva.innerHTML = `$${producto.precio} S/ IVA`;
+
+        const cantidad = document.createElement("p");
+        cantidad.className = "cantidad";
+        cantidad.innerHTML = `Cantidad: ${producto.cantidad}`;
+
+        const total = document.createElement("p");
+        total.className = "total";
+        total.innerHTML = `Total: $${producto.precioMasIVA * producto.cantidad}`;
+    
+        //agregamos todo al li
+
+        li.append(img, h6, pPrecio, pSinIva, cantidad, total);
+
+        //agregamos a la lista
+
+        listadoCarrito.append(li);
+
+        totalAPagar = producto.precioMasIVA * producto.cantidad ;
+        console.log(totalAPagar)
+    
+    }
+}
+
 //FUNCION AGREGAR AL CARRITO
 
 function agregarAlCarrito(producto, cantidad) {
@@ -100,7 +163,8 @@ function agregarAlCarrito(producto, cantidad) {
         carrito.push({
             nombre: producto.nombre,
             precio: producto.precio,
-            precioMasIVA: producto.precio * 1.22,
+            img: producto.img,
+            precioMasIVA: Math.round(producto.precio * 1.22),
             cantidad: cantidad
         })
 
@@ -108,4 +172,5 @@ function agregarAlCarrito(producto, cantidad) {
 
         carrito[productoExiste].cantidad += cantidad;
     }
+    renderizarCarrito(carrito);
 }
