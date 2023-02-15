@@ -15,50 +15,97 @@ li {
 * {
     margin: 0;
     padding: 0;
-}
 
-header {
-    background-color: #efb810;
-}
-
-.producto {
-    border: 1px solid rgba(0, 0, 0, 0.205);
-    border-radius: 1rem;
-    margin: 1rem;
-    padding: 1rem;
-    width: 20%;
-}
-
-#listadoProductos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-main {
-    display: flex;
-    flex-wrap: wrap;
-    #filrado{
-        width: 80%;
+    header {
+        background-color: #efb810;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        height: 4rem;
     }
-    #catalogo {
-        width: 80%;
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        div {
+            width: 75%;
+
+            #filtrado {
+
+            }
+
+            #catalogo {
+                margin-top: 8rem;
+
+                #listadoProductos {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+
+                    .producto {
+                        border: 1px solid rgba(0, 0, 0, 0.205);
+                        border-radius: 1rem;
+                        margin: 1rem;
+                        padding: 1rem;
+                        width: 25%;
+                        min-width: 200px;
+                        text-align: center;
+                    }                    
+                }                
+            }
+        }
+        
+        #carrito {
+            width: 20%;
+            margin-top: 4rem;
+            border-left: 1px solid black;
+            display: flex;
+            flex-direction: column;
+        }
     }
 }
 
-#carrito {
-    width: 20%;
-    position: fixed;
-    top: 0;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-
-    ul  {
-    }
-}
 
 .productoEnCarrito {
-    border-bottom: 1px solid black;
+    display: grid;
+    grid-template-areas: 
+    "img nombre"
+    "img precio"
+    "img sinIva"
+    "img cantidad"
+    "img total";
+    border-bottom: 1px solid rgba(0, 0, 0, 0.24);
+    margin-top: 1rem;
     margin-bottom: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+    .imgCarrito {
+        grid-area: img;
+        max-height: 8rem;
+        margin-right: 2rem;    
+    }
+
+    h6 {
+        grid-area: nombre;
+    }
+
+    .precio {
+        grid-area: precio;
+    }
+
+    .precioSinIVA {
+        grid-area: sinIva;
+    }
+
+    .cantidad {
+        grid-area: cantidad;
+    }
+
+    .total {
+        grid-area: total;
+    }
 }
+
