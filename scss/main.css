@@ -88,6 +88,9 @@ li .precioSinIVA {
 * main #carrito #listadoCarrito .productoEnCarrito .cantidad {
   grid-area: cantidad;
 }
+* main #carrito #listadoCarrito .productoEnCarrito .cantidad .ocultar {
+  display: none;
+}
 * main #carrito #listadoCarrito .productoEnCarrito .total {
   grid-area: total;
   font-weight: bold;

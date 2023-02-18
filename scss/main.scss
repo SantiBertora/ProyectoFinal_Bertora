@@ -105,6 +105,10 @@ li {
                 
                     .cantidad {
                         grid-area: cantidad;
+
+                        .ocultar {
+                            display: none;
+                        }
                     }
                 
                     .total {
