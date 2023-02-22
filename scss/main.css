@@ -29,10 +29,10 @@ li .precioSinIVA {
   justify-content: space-between;
 }
 * main div {
-  width: 75%;
+  width: 80%;
 }
 * main div #catalogo {
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 * main div #catalogo #listadoProductos {
   display: flex;
@@ -96,4 +96,17 @@ li .precioSinIVA {
   font-weight: bold;
   font-size: x-large;
   color: red;
+}
+* main #carrito div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+* main #carrito div p {
+  width: 100%;
+  text-align: center;
+}
+* main #carrito div button {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
