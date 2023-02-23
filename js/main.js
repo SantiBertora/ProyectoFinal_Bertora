@@ -388,7 +388,7 @@ btnFinalizarCompra.addEventListener("click", () => {
 
 //OBTENEMOS LOS PRODUCTOS JSON
 
-fetch("/productos.json")
+fetch("./productos.json")
     .then((response) => {
         return response.json();
     })
