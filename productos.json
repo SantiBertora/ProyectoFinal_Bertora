@@ -15,102 +15,102 @@
         "nombre": "Hendrick's",
         "bebida": "Gin",
         "precio": 1600,
-        "img": "/img/productos-png/gin_hendricks.png"
+        "img": "./img/productos-png/gin_hendricks.png"
     },
     {
         "nombre": "Smirnoff",
         "bebida": "Vodka",
         "precio": 400,
-        "img": "/img/productos-png/vodka_smirnoff.png"
+        "img": "./img/productos-png/vodka_smirnoff.png"
     },
     {
         "nombre": "Grey Goose",
         "bebida": "vodka",
         "precio": 1450,
-        "img": "/img/productos-png/vodka_greyGoose.png"
+        "img": "./img/productos-png/vodka_greyGoose.png"
     },
     {
         "nombre": "Absolut",
         "bebida": "Vodka",
         "precio": 700,
-        "img": "/img/productos-png/vodka_absolut.png"
+        "img": "./img/productos-png/vodka_absolut.png"
     },
     {
         "nombre": "Havana Club 7 Años",
         "bebida": "Ron",
         "precio": 1250,
-        "img": "/img/productos-png/ron_havanaClub7.png"
+        "img": "./img/productos-png/ron_havanaClub7.png"
     },
     {
         "nombre": "Bacardi Blanco",
         "bebida": "Ron",
         "precio": 480,
-        "img": "/img/productos-png/ron_bacardiBlanco.png"
+        "img": "./img/productos-png/ron_bacardiBlanco.png"
     },
     {
         "nombre": "Barceló Dorado",
         "bebida": "Ron",
         "precio": 480,
-        "img": "/img/productos-png/ron_barceloDorado.png"
+        "img": "./img/productos-png/ron_barceloDorado.png"
     },
     {
         "nombre": "Velho Barreiro",
         "bebida": "Cachaca",
         "precio": 250,
-        "img": "/img/productos-png/cachaca_velhoBarreiro.png"
+        "img": "./img/productos-png/cachaca_velhoBarreiro.png"
     },
     {
         "nombre": "Santo Grau",
         "bebida": "Cachaca",
         "precio": 700,
-        "img": "/img/productos-png/cachaca_santoGrau.png"
+        "img": "./img/productos-png/cachaca_santoGrau.png"
     },
     {
         "nombre": "José Cuervo Plata",
         "bebida": "Tequila",
         "precio": 730,
-        "img": "/img/productos-png/tequila_joseCuervoPlata.png"
+        "img": "./img/productos-png/tequila_joseCuervoPlata.png"
     },
     {
         "nombre": "1800 Reposado",
         "bebida": "Tequila",
         "precio": 1750,
-        "img": "/img/productos-png/tequila_1800Reposado.png"
+        "img": "./img/productos-png/tequila_1800Reposado.png"
     },
     {
         "nombre": "Johnnie Walker Black Label",
         "bebida": "Whisky",
         "precio": 1750,
-        "img": "/img/productos-png/whisky_johnnieWalkerBlackLabel.png"
+        "img": "./img/productos-png/whisky_johnnieWalkerBlackLabel.png"
     },
     {
         "nombre": "Royal Salute",
         "bebida": "Whisky",
         "precio": 8000,
-        "img": "/img/productos-png/whisky_royalSalute.png"
+        "img": "./img/productos-png/whisky_royalSalute.png"
     },
     {
         "nombre": "Chivas Regal 18 Años",
         "bebida": "Whisky",
         "precio": 4000,
-        "img": "/img/productos-png/whisky_chivasRegal18.png"
+        "img": "./img/productos-png/whisky_chivasRegal18.png"
     },
     {
         "nombre": "Hpnotiq",
         "bebida": "Licor",
         "precio": 1600,
-        "img": "/img/productos-png/licor_hpnotiq.png"
+        "img": "./img/productos-png/licor_hpnotiq.png"
     },
     {
         "nombre": "Frangelico",
         "bebida": "Licor",
         "precio": 1280,
-        "img": "/img/productos-png/licor_frangelico.png"
+        "img": "./img/productos-png/licor_frangelico.png"
     },
     {
         "nombre": "Cointreau",
         "bebida": "Licor",
         "precio": 1450,
-        "img": "/img/productos-png/licor_cointreau.png"
+        "img": "./img/productos-png/licor_cointreau.png"
     }
 ]
