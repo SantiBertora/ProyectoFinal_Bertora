@@ -3,13 +3,13 @@
         "nombre": "Bombay",
         "bebida": "Gin",
         "precio": 700,
-        "img": "/img/productos-png/gin_bombay.png"
+        "img": "./img/productos-png/gin_bombay.png"
     },
     {
         "nombre": "Tanqueray",
         "bebida": "Gin",
         "precio": 680,
-        "img": "/img/productos-png/gin_tanqueray.png"
+        "img": "./img/productos-png/gin_tanqueray.png"
     },
     {
         "nombre": "Hendrick's",
