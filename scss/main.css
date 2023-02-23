@@ -1,17 +1,3 @@
-li {
-  list-style-type: none;
-}
-li .precio {
-  color: green;
-  font-weight: bold;
-  font-size: x-large;
-}
-li .precioSinIVA {
-  color: green;
-  font-weight: bold;
-  font-size: medium;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +8,18 @@ li .precioSinIVA {
   top: 0;
   width: 100%;
   height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1rem;
+}
+* header #logo {
+  height: 100%;
+}
+* header #nombreDeLaEmpresa {
+  margin-right: 2rem;
+  font-style: italic;
+  line-height: 100%;
 }
 * main {
   display: flex;
@@ -47,6 +45,17 @@ li .precioSinIVA {
   width: 25%;
   min-width: 200px;
   text-align: center;
+  list-style-type: none;
+}
+* main div #catalogo #listadoProductos .producto .precio {
+  color: green;
+  font-weight: bold;
+  font-size: x-large;
+}
+* main div #catalogo #listadoProductos .producto .precioSinIVA {
+  color: green;
+  font-weight: bold;
+  font-size: medium;
 }
 * main #carrito {
   width: 20%;
@@ -58,18 +67,33 @@ li .precioSinIVA {
   border-left: 1px solid black;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+* main #carrito #tituloCarrito {
+  font-size: x-large;
+  text-align: center;
+  font-weight: bolder;
+  border-bottom: 1px solid black;
 }
 * main #carrito #listadoCarrito {
   overflow-y: scroll;
 }
 * main #carrito #listadoCarrito .productoEnCarrito {
   display: grid;
-  grid-template-areas: "img nombre" "img precio" "img sinIva" "img cantidad" "img total";
+  grid-template-areas: "img nombre btn" "img precio precio" "img sinIva sinIva" "img cantidad cantidad" "img total total";
   border-bottom: 1px solid rgba(0, 0, 0, 0.24);
   margin-top: 1rem;
   margin-bottom: 1rem;
   padding-right: 2rem;
   padding-left: 2rem;
+}
+* main #carrito #listadoCarrito .productoEnCarrito .btnEliminarProducto {
+  grid-area: btn;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 * main #carrito #listadoCarrito .productoEnCarrito .imgCarrito {
   grid-area: img;
@@ -78,12 +102,19 @@ li .precioSinIVA {
 }
 * main #carrito #listadoCarrito .productoEnCarrito h6 {
   grid-area: nombre;
+  font-size: larger;
 }
 * main #carrito #listadoCarrito .productoEnCarrito .precio {
   grid-area: precio;
+  font-size: large;
+  color: green;
+  font-weight: bold;
 }
 * main #carrito #listadoCarrito .productoEnCarrito .precioSinIVA {
   grid-area: sinIva;
+  font-size: medium;
+  color: green;
+  font-weight: bold;
 }
 * main #carrito #listadoCarrito .productoEnCarrito .cantidad {
   grid-area: cantidad;
@@ -97,16 +128,27 @@ li .precioSinIVA {
   font-size: x-large;
   color: red;
 }
-* main #carrito div {
+* main #carrito .contenedorBtnCarrito {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
 }
-* main #carrito div p {
+* main #carrito .contenedorBtnCarrito #precioFinal {
   width: 100%;
   text-align: center;
+  border: 1px solid black;
 }
-* main #carrito div button {
+* main #carrito .contenedorBtnCarrito #finalizarCompra {
   width: 100%;
+  border: none;
+  font-size: larger;
+  font-weight: bold;
+  background: rgb(102, 255, 0);
+}
+* main #carrito .contenedorBtnCarrito #vaciarCarrito {
+  width: 100%;
+  border: none;
+  font-size: large;
+  background: red;
 }/*# sourceMappingURL=main.css.map */

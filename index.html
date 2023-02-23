@@ -6,15 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="/scss/main.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
-    <title>Document</title>
+    <title>Distribuidora SB</title>
+    <link rel="shortcut icon" href="/img/logo/logo.png">
 </head>
+
 <body>
+
+    <!--header con el logo y el nombre de la empresa-->
     <header>
-        <h1>Distribuidora SB</h1>
+        <img id="logo" src="/img/logo/logo.png" alt="Logo de la empresa">
+        <h1 id="nombreDeLaEmpresa">Distribuidora SB</h1>
     </header>
 
     <main>
 
+        <!--El catálogo se creará aquí-->
         <div>
             <section id="catalogo">
                 <ul id="listadoProductos">
@@ -23,12 +29,15 @@
             </section>
         </div>
         
+        <!--aquí tendremos el carrito-->
         <section  id="carrito">
-            <p>Carrito de Compras</p>
+            <p id="tituloCarrito">Carrito de Compras</p>
             <ul id="listadoCarrito">
 
             </ul>
-            <div>
+
+            <!--este contenedor nos mostrara el precio final y contiene los botones de finalizar compra y limpiar el carro-->
+            <div class="contenedorBtnCarrito">
                 <p id="precioFinal">Total pedido: <span></span></p>
                 <button id="finalizarCompra">Finalizar Compra</button>
                 <button id="vaciarCarrito">Limpiar Carrito</button>
@@ -36,11 +45,6 @@
         </section>
     </main>
 
-    
-
-    <footer>
-
-    </footer>
     
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
